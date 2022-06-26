@@ -6,11 +6,15 @@
     right: 0;
     bottom: 0;
     z-index: 1000000000000000;
-    div{
+    &__wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 300px;
+    }
+    &__img{
+        width: 300px;
+        height: 300px;
     }
 
         
