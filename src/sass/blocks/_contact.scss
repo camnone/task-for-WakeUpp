@@ -1,0 +1,37 @@
+.contact{
+    margin-top: 74px;
+    min-height: 400px;
+    max-width:400px;
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        width: 475px;
+        height: 475px;
+        left: 559px;
+        position: absolute;
+        background-image: url('../img/image.png');
+    }
+    &__form{
+        justify-content: space-between;
+        order: 2;
+    }
+    &__btn{
+        order: 2;
+        margin-top: 11px;
+    }
+    &__input{
+        width: 100%;
+        margin-top: 16px;
+    }
+    &__textarea{
+        margin-top: 16px;
+    }
+    &__title{
+        margin: 0;
+    }
+    &__subtitle{
+        margin: 0;
+    }
+
+}

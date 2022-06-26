@@ -1,0 +1,40 @@
+.modal__mini{
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    left: 50%;
+    display: none;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    min-height: 140px;
+    background: linear-gradient(265.48deg,#4870ff -5.06%,#fa00ff 94.87%);
+    padding: 38px 40px 40px 40px;
+    &-close{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: -40px;
+        font-size: 41px;
+        color: red;
+        line-height: 21px;
+    }
+    &-subtitle{
+
+        text-align: center;
+    }
+    &-descr{
+        line-height: 20px;
+    }
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: none;
+    height: 100%;
+    background-color: #000;
+    z-index: 100000000000000000000000000000000000;
+    background: rgba(0,0,0,.56);
+  
+}

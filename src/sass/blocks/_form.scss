@@ -1,0 +1,52 @@
+.form{
+    margin-top: 12px;
+    @include between-center;
+    flex-wrap: wrap;
+    &__input{
+        padding: 13px 0  12px 14px;
+        min-width: 202px;
+        min-height: 44px;
+        border:none;
+        border-radius: 8px;
+    }
+    &__textarea{
+        padding: 13px 0  12px 14px;
+        width: 100%;
+        height: 128px;
+        border: none;
+        left: 200px;
+        top: 1414px;
+        color: #050D2A;
+
+        border-radius: 8px;
+    }
+    &__policy{
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: 14px auto;
+        gap: 0.5em;
+        margin-bottom: 0;
+    }
+    &__descr{
+        margin: 0;
+        margin-left: 8px;
+        display: block;
+        font-weight: 300;
+        span{
+            text-decoration: underline;
+        }
+    }
+    &__checkbox{
+        border:none;
+    }
+    &__password{
+        display: flex;
+        min-width: 428px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    
+}
+
+

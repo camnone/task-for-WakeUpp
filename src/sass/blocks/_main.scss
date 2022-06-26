@@ -1,0 +1,54 @@
+.main{
+    background: url('../img/bg/bg_hero.png') 100% 32%/100% no-repeat;
+    padding-top: 126px;
+    min-height: 521px;
+    width: 100%;
+    &__title{
+        max-width: 586px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__subtitle{
+        max-width: 389px;
+        margin: 0 auto;
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__wrapper{
+        &-btn{
+            max-width: 336px;
+            margin: 0 auto;
+            margin-top: 24px;
+            @include between-center;
+        }
+        &-create{
+            padding: 18px 16px 20px 16px;
+            margin: 0 auto;
+            margin-top: 59px;
+            max-width: 864px;
+            min-height: 150px;
+            background: linear-gradient(268.31deg, rgba(79, 89, 124, 0.4) 0%, rgba(123, 135, 175, 0.4) 50.52%, rgba(63, 72, 105, 0.4) 100%);
+            border: 1px solid #3A4054;
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            &_description{
+                @include between-center;
+            }
+            &_games{
+                @include between-center;
+            }
+            &_game{
+
+                @include between-center;
+                max-width: 130px;
+                flex-wrap:nowrap; 
+            }
+            &_icon{
+                margin-right: 6px;
+                width: 36px;
+                height: 36px;
+            }
+        }
+
+    }
+}
