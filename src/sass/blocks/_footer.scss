@@ -2,8 +2,9 @@
     width: 100%;
     background: #01011F;
     padding: 24px 0 24px 0;
-    position: absolute;
+    position: relative;
     z-index: 1000;
+
     &__basement{
         margin-top: 24px;
         display: flex;

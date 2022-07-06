@@ -53,14 +53,14 @@
         </div>
     </div>
 
-    <div class="modal modalLogin" id="login">
+    <div class="modal modalLogin" >
         <div class="modal__dialog">
             <div class="modal__content">
                 <div class="modal__header">
                     <button class=" btn__modal title title_fz-20 btn__modal-left btn__modal-active" data-left id="signIn">Sign Up</button>
                     <button class=" title title_fz-20 btn__modal-right btn__modal " data-right id="lognIn">Login</button>
                 </div>
-                <form action="#" class="form modal__form modalLogin__form" id="form">
+                <form action="#" class="form modal__form modalLogin__form" id="password">
                     <input class=" form__input   title_fz-16 modal__input title_fw-400 " type="email" required
                         placeholder="Email Address" name="email">
 
@@ -68,7 +68,7 @@
                         <input class=" form__input title_fz-16 modal__input-pass title_fw-400  " type="Password"
                             required placeholder="Password" name="password">
 
-                    <button type="submit" class="title title_fz-18 btn form__btn modal__btn">Logn in</button>
+                    <button type="submit" class="title title_fz-18 btn form__btn modal__btn" >Logn in</button>
                 </form>
             </div>
 
@@ -147,11 +147,11 @@
                     <div class="header__wrapper">
                         <img src="../icons/logo/logo.svg" alt="logo" class="header__logo">
                         <ul class="header__menu">
-                            <li class="header__list header__list_active"><a class="title title_fz-16" href="#">Games</a>
+                            <li class="header__list header__list_active"><a class="title title_fz-16" href="index.html">Games</a>
                             </li>
                             <li class="header__list"><a class="title title_fz-16" href="#">Contact Us</a></li>
-                            <li class="header__list"><a class="title title_fz-16" href="#">Terms of Use</a></li>
-                            <li class="header__list"><a class="title title_fz-16" href="#">About</a></li>
+                            <li class="header__list"><a class="title title_fz-16" href="terms.html">Terms of Use</a></li>
+                            <li class="header__list"><a class="title title_fz-16" href="privacypolicy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -410,6 +410,7 @@
 
     <script  src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script  src="js/script.js"></script>
 
 </body>

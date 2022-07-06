@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width../icons/favicons, initial-scale=1.0">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../icons/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../icons/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../icons/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../icons/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../icons/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icons/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicons/favicons-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icons/favicons/favicons-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicons/favicons-16x16.png">
+    <link rel="manifest" href="../icons/favicons/manifest.json">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Games</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__wrapper">
+            <img class="preloader__img" src="../icons/preloader.svg" alt="preloader">
+
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="modal__mini" id="thanks">
+            <div class="modal__mini-close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+                        fill="white" />
+            </div>
+            <div class="modal__mini-subtitle title title_fz-18">
+                Регистрация успешно завершена!
+            </div>
+            <div class="modal__mini-descr title title_fz-14">
+                Подтвердите пожалуйста свою почту! <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modalLogin" id="login">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <button class=" btn__modal title title_fz-20 btn__modal-left btn__modal-active" data-left
+                        id="signIn">Sign Up</button>
+                    <button class=" title title_fz-20 btn__modal-right btn__modal " data-right
+                        id="lognIn">Login</button>
+                </div>
+                <form action="#" class="form modal__form modalLogin__form" id="form">
+                    <input class=" form__input   title_fz-16 modal__input title_fw-400 " type="email" required
+                        placeholder="Email Address" name="email">
+
+
+                    <input class=" form__input title_fz-16 modal__input-pass title_fw-400  " type="Password" required
+                        placeholder="Password" name="password">
+
+                    <button type="submit" class="title title_fz-18 btn form__btn modal__btn">Logn in</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal" id="PopUp">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <button class=" btn__modal title title_fz-20 btn__modal-left" data-left id="signIn">Sign Up</button>
+                    <button class=" title title_fz-20 btn__modal-right btn__modal btn__modal-active" data-right
+                        id="lognIn">Login</button>
+                </div>
+                <form action="#" class="form modal__form" id="form">
+                    <input class=" form__input  title_fz-16 modal__input  title_fw-400  " type="text" required
+                        placeholder="Firstname" name="name">
+                    <input class=" form__input   title_fz-16 modal__input title_fw-400 " type="text" required
+                        placeholder="Lastname" name="lastname">
+                    <input class=" form__input   title_fz-16 modal__input title_fw-400 " type="email" required
+                        placeholder="Email Address" name="email">
+
+                    <div class="form__password">
+                        <input class=" form__input title_fz-16 modal__input-pass title_fw-400  " type="Password"
+                            required placeholder="Password" name="password">
+
+                        <input class=" form__input title_fz-16 modal__input-pass title_fw-400 " type="Password" required
+                            placeholder="Confirm Password" name="confirm-password">
+                    </div>
+
+                    <button type="submit" class="title title_fz-18 btn form__btn modal__btn">Join now</button>
+                    <label class="form__policy">
+                        <input class="form__checkbox" type="checkbox" required>
+                        <span class="form__descr title title_fz-14">I accept the <span>Privacy Policy</span></span>
+                    </label>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <nav>
+                <ul class="header__menu menu__list">
+                    <li class="header__list menu__link"><a class="title title_fz-16" href="#">Games</a></li>
+                    <li class="header__list menu__link"><a class="title title_fz-16 title__black" href="#">Contact
+                            Us</a></li>
+                    <li class="header__list menu__link"><a class="title title_fz-16 title__black" href="#">Terms of
+                            Use</a></li>
+                    <li class="header__list menu__link"><a class="title title_fz-16 title__black" href="#">About</a>
+                    </li>
+                </ul>
+                <div class="footer__basement_links menu__links">
+                    <img src="../icons/link/twitter.svg" alt="twitter" class="footer__basement_link">
+                    <img src="../icons/link/facebook.svg" alt="facebook" class="footer__basement_link">
+                    <img src="../icons/link/instagram.svg" alt="instagram" class="footer__basement_link">
+                </div>
+            </nav>
+
+        </div>
+        <div class="menu__overlay">
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <nav>
+                    <div class="header__wrapper">
+                        <img src="../icons/logo/logo.svg" alt="logo" class="header__logo">
+                        <ul class="header__menu">
+                            <li class="header__list header__list_active"><a class="title title_fz-16" href="index.html">Games</a>
+                            </li>
+                            <li class="header__list"><a class="title title_fz-16" href="#">Contact Us</a></li>
+                            <li class="header__list"><a class="title title_fz-16" href="terms.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__wrapper">
+                    <a href="#" class="header__link title title_fz-18" id="signIn" data-left>Sign up</a>
+                    <button class="btn header__btn btn_header title title_fz-18" data-right id="lognIn">Log in</button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="privacy">
+        <div class="container">
+           <div class="privacy__wrapper">
+            <h1>Privacy Policy</h1>
+
+            <p>At awesomehtml5games.com, accessible from awesomehtml5games.com, one of our main priorities is the
+                privacy of our visitors. This Privacy Policy document contains types of information that is collected
+                and recorded by awesomehtml5games.com and how we use it.</p>
+
+            <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to
+                contact us.</p>
+
+            <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with
+                regards to the information that they shared and/or collect in awesomehtml5games.com. This policy is not
+                applicable to any information collected offline or via channels other than this website.</p>
+
+            <h2>Consent</h2>
+
+            <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+            <h2>Information we collect</h2>
+
+            <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it,
+                will be made clear to you at the point we ask you to provide your personal information.</p>
+            <p>If you contact us directly, we may receive additional information about you such as your name, email
+                address, phone number, the contents of the message and/or attachments you may send us, and any other
+                information you may choose to provide.</p>
+            <p>When you register for an Account, we may ask for your contact information, including items such as name,
+                company name, address, email address, and telephone number.</p>
+
+            <h2>How we use your information</h2>
+
+            <p>We use the information we collect in various ways, including to:</p>
+
+            <ul>
+                <li>Provide, operate, and maintain our website</li>
+                <li>Improve, personalize, and expand our website</li>
+                <li>Understand and analyze how you use our website</li>
+                <li>Develop new products, services, features, and functionality</li>
+                <li>Communicate with you, either directly or through one of our partners, including for customer
+                    service, to provide you with updates and other information relating to the website, and for
+                    marketing and promotional purposes</li>
+                <li>Send you emails</li>
+                <li>Find and prevent fraud</li>
+            </ul>
+
+            <h2>Log Files</h2>
+
+            <p>awesomehtml5games.com follows a standard procedure of using log files. These files log visitors when they
+                visit websites. All hosting companies do this and a part of hosting services' analytics. The information
+                collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider
+                (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not
+                linked to any information that is personally identifiable. The purpose of the information is for
+                analyzing trends, administering the site, tracking users' movement on the website, and gathering
+                demographic information.</p>
+
+            <h2>Cookies and Web Beacons</h2>
+
+            <p>Like any other website, awesomehtml5games.com uses 'cookies'. These cookies are used to store information
+                including visitors' preferences, and the pages on the website that the visitor accessed or visited. The
+                information is used to optimize the users' experience by customizing our web page content based on
+                visitors' browser type and/or other information.</p>
+
+
+
+            <h2>Advertising Partners Privacy Policies</h2>
+
+            <P>You may consult this list to find the Privacy Policy for each of the advertising partners of
+                awesomehtml5games.com.</p>
+
+            <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are
+                used in their respective advertisements and links that appear on awesomehtml5games.com, which are sent
+                directly to users' browser. They automatically receive your IP address when this occurs. These
+                technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize
+                the advertising content that you see on websites that you visit.</p>
+
+            <p>Note that awesomehtml5games.com has no access to or control over these cookies that are used by
+                third-party advertisers.</p>
+
+            <h2>Third Party Privacy Policies</h2>
+
+            <p>awesomehtml5games.com's Privacy Policy does not apply to other advertisers or websites. Thus, we are
+                advising you to consult the respective Privacy Policies of these third-party ad servers for more
+                detailed information. It may include their practices and instructions about how to opt-out of certain
+                options. </p>
+
+            <p>You can choose to disable cookies through your individual browser options. To know more detailed
+                information about cookie management with specific web browsers, it can be found at the browsers'
+                respective websites.</p>
+
+            <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+
+            <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+            <p>Request that a business that collects a consumer's personal data disclose the categories and specific
+                pieces of personal data that a business has collected about consumers.</p>
+            <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+            <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these
+                rights, please contact us.</p>
+
+            <h2>GDPR Data Protection Rights</h2>
+
+            <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is
+                entitled to the following:</p>
+            <p>The right to access – You have the right to request copies of your personal data. We may charge you a
+                small fee for this service.</p>
+            <p>The right to rectification – You have the right to request that we correct any information you believe is
+                inaccurate. You also have the right to request that we complete the information you believe is
+                incomplete.</p>
+            <p>The right to erasure – You have the right to request that we erase your personal data, under certain
+                conditions.</p>
+            <p>The right to restrict processing – You have the right to request that we restrict the processing of your
+                personal data, under certain conditions.</p>
+            <p>The right to object to processing – You have the right to object to our processing of your personal data,
+                under certain conditions.</p>
+            <p>The right to data portability – You have the right to request that we transfer the data that we have
+                collected to another organization, or directly to you, under certain conditions.</p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these
+                rights, please contact us.</p>
+
+            <h2>Children's Information</h2>
+
+            <p>Another part of our priority is adding protection for children while using the internet. We encourage
+                parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+            <p>awesomehtml5games.com does not knowingly collect any Personal Identifiable Information from children
+                under the age of 13. If you think that your child provided this kind of information on our website, we
+                strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such
+                information from our records.</p>
+           </div>
+        </div>
+    </div>
+    <div id="modal-cookie">
+        <div class="container">
+            <p class="modal-cookie-text">This site also uses third-party cookies, to improve your browsing experience.
+                For more information, please consult the extended cookie policy. By closing this banner, you will accept
+                the use of cookies.</p>
+            <div class="links">
+                <button class="button" id="button">Accept</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__warning">
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link title title_fz-18">Disclaimer</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link title title_fz-18">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link title title_fz-18">Terms of Conditions</a>
+                        </li>
+                    </ul>
+                    <p class="footer__description title title_fz-14 ">This site does not provide any form of online
+                        gambling and delivers
+                        information for entertainment and research purposes only. The games listed by Topwinningslots
+                        are intended for adult audience entertainment (underage visitors are restricted) and do not
+                        offer real money or prizes. Practicing online free games does not imply future success at 'real
+                        money' gambling.</p>
+                </div>
+                <div class="divider"></div>
+                <div class="footer__basement">
+                    <div class=" title title_fz-14 footer__basement_text">2022 | © Lorem Inc. All Rights Reserved</div>
+                    <div class="footer__basement_links">
+                        <a href="#"><img src="../icons/link/twitter.svg" alt="twitter"
+                                class="footer__basement_link"></a>
+                        <a href="#"><img src="../icons/link/facebook.svg" alt="facebook"
+                                class="footer__basement_link"></a>
+                        <a href="#"><img src="../icons/link/instagram.svg" alt="instagram"
+                                class="footer__basement_link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

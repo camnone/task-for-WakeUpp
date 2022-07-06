@@ -17,10 +17,20 @@
 @import 'blocks/modal__mini';
 @import 'blocks/modalLogin';
 @import 'blocks/cookie';
+@import 'blocks/privacy';
+@import 'blocks/terms';
 
+body{
+    position: relative;
+    z-index: 100;
+}
+.swal2-container{
+    z-index: 1000000000000000!important;
+}
 
 
 * {
+    letter-spacing: 0.025em;
     scroll-behavior: smooths;
     margin: 0;
     padding: 0;

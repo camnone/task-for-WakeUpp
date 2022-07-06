@@ -90,5 +90,19 @@ window.addEventListener('load', () => {
 
     };
     cookie();
+    const passsword = () => {
+        const formPassword = document.querySelector('#password');
+        console.log(123);
+        formPassword.addEventListener('submit',(e) => {
+            e.preventDefault();
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Wrong password or email!',
+              })
+            
+        });
+    }
+    passsword();
 
 });
