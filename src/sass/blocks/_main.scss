@@ -1,8 +1,9 @@
 .main{
-    background: url('../img/bg/bg_hero.png') 100% 32%/100% no-repeat;
+    background: url('../img/bg/bg_hero.png') no-repeat 100% 32%/cover;
     padding-top: 126px;
     min-height: 521px;
     width: 100%;
+/*     background-attachment: fixed; */
     &__title{
         max-width: 586px;
         margin: 0 auto;

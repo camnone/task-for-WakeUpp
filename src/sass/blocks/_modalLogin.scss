@@ -1,0 +1,24 @@
+.modalLogin{
+    display: none;
+    &__form{
+        padding: 30px 45px 45px;
+        input{
+            min-width: 100%;
+        }
+    }
+    .modal__dialog{
+        max-width: 500px;
+    }
+    .modal__header{
+        margin: 0;
+    }
+    .modal__btn{
+        margin-top: 35px;
+    }
+    .modal__content{
+        padding: 0;
+    }
+    .modal__input{
+        margin-bottom: 30px;
+    }
+}

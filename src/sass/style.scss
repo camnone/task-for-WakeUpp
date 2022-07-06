@@ -15,6 +15,8 @@
 @import 'blocks/menu';
 @import 'blocks/modal';
 @import 'blocks/modal__mini';
+@import 'blocks/modalLogin';
+@import 'blocks/cookie';
 
 
 
@@ -53,6 +55,18 @@
     visibility: visible;
     opacity: 1;
 }
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.accepted{
+    opacity: 0!important;
+    visibility: hidden!important;
+    bottom: -20%!important;
+}
+
 
 @import 'libs/bootstrap-reboot.min';
 @import 'blocks/preloader';

@@ -53,12 +53,35 @@
         </div>
     </div>
 
+    <div class="modal modalLogin" id="login">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <button class=" btn__modal title title_fz-20 btn__modal-left btn__modal-active" data-left id="signIn">Sign Up</button>
+                    <button class=" title title_fz-20 btn__modal-right btn__modal " data-right id="lognIn">Login</button>
+                </div>
+                <form action="#" class="form modal__form modalLogin__form" id="form">
+                    <input class=" form__input   title_fz-16 modal__input title_fw-400 " type="email" required
+                        placeholder="Email Address" name="email">
+
+                    
+                        <input class=" form__input title_fz-16 modal__input-pass title_fw-400  " type="Password"
+                            required placeholder="Password" name="password">
+
+                    <button type="submit" class="title title_fz-18 btn form__btn modal__btn">Logn in</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
     <div class="modal" id="PopUp">
         <div class="modal__dialog">
             <div class="modal__content">
                 <div class="modal__header">
-                    <button class=" btn__modal title title_fz-20 btn__modal-left">Sign Up</button>
-                    <button class=" title title_fz-20 btn__modal-right btn__modal btn__modal-active">Login</button>
+                    <button class=" btn__modal title title_fz-20 btn__modal-left" data-left id="signIn">Sign Up</button>
+                    <button class=" title title_fz-20 btn__modal-right btn__modal btn__modal-active" data-right id="lognIn">Login</button>
                 </div>
                 <form action="#" class="form modal__form" id="form">
                     <input class=" form__input  title_fz-16 modal__input  title_fw-400  " type="text" required
@@ -83,7 +106,9 @@
                     </label>
                 </form>
             </div>
+
         </div>
+
     </div>
     <div class="menu">
         <div class="menu__block">
@@ -131,8 +156,8 @@
                     </div>
                 </nav>
                 <div class="header__wrapper">
-                    <a href="#" class="header__link title title_fz-18" id="signIn">Sign up</a>
-                    <button class="btn header__btn btn_header title title_fz-18" id="lognIn">Log in</button>
+                    <a href="#" class="header__link title title_fz-18" id="signIn" data-left>Sign up</a>
+                    <button class="btn header__btn btn_header title title_fz-18" data-right id="lognIn">Log in</button>
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -335,6 +360,16 @@
             </section>
         </div>
     </div>
+    <div id="modal-cookie">
+        <div class="container">
+          <p class="modal-cookie-text">This site also uses third-party cookies, to improve your browsing experience.
+            For more information, please consult the extended cookie policy. By closing this banner, you will accept
+            the use of cookies.</p>
+          <div class="links">
+            <button class="button" id="button">Accept</button>
+        </div>
+        </div>
+      </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">

@@ -8,10 +8,19 @@
     height: 100%;   
     overflow: hidden;
     background: rgba(2, 13, 49, 0.88);
-    backdrop-filter: blur(10px);
+
     &__dialog{
         max-width: 461px;
         margin: 200px auto;
+    }
+    &__overlay{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+
     }
     &__content{
         position: relative;
